@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Management System</title>
+</head>
+<head>
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+<h2>Employee Management System</h2>
+
+<form action="/submit" method="post">
+    <input type="text" name="name" placeholder="Employee Name" required>
+    <input type="text" name="department" placeholder="Department" required>
+    <input type="number" name="salary" placeholder="Salary" required>
+    <button type="submit">Add Employee</button>
+</form>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Department</th>
+        <th>Salary</th>
+        <th>Action</th>
+
+    </tr>
+{% for emp in employees %}
+<tr>
+    <td>{{ emp.name }}</td>
+    <td>{{ emp.department }}</td>
+    <td>{{ emp.salary }}</td>
+    <td>
+        <a href="/delete/{{ emp.id }}"
+           onclick="return confirm('Are you sure?')">
+           Delete
+        </a>
+    </td>
+</tr>
+{% endfor %}
+
+</table>
+
+</div>
+
+</body>
+
+</html>
