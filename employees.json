@@ -1,0 +1,32 @@
+[
+    {
+        "id": 3,
+        "name": "ayushi",
+        "department": "it",
+        "salary": "30000"
+    },
+    {
+        "id": 4,
+        "name": "shubham",
+        "department": "medical",
+        "salary": "30000"
+    },
+    {
+        "id": 5,
+        "name": "prince ",
+        "department": "mechanical",
+        "salary": "40000"
+    },
+    {
+        "id": 5,
+        "name": "Varisha, Khanam",
+        "department": "cs",
+        "salary": "50000"
+    },
+    {
+        "id": 5,
+        "name": "Raina",
+        "department": "cs",
+        "salary": "40000"
+    }
+]
